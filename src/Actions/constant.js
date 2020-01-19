@@ -1,2 +1,0 @@
-export const INIT_LOAD_COMMENTS = "INIT_LOAD_COMMENTS";
-export const LOAD_COMMENTS = "LOAD_COMMENTS";

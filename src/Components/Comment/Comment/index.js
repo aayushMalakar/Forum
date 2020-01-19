@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
-import { initLoadComments } from "../../../Actions/actions";
 
 import CommentLoader from "./commentLoader";
 
@@ -22,7 +20,7 @@ const Comment = props => {
 
   useEffect(() => {
     if (comments.length > 0) {
-      props.loadComments(comments);
+      setComments(comments);
     }
   });
 
@@ -39,12 +37,4 @@ const Comment = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return { comments: state.commentReducer.comments };
-};
-
-const mapDispatchToProps = dispatch => ({
-  loadComments: comments => dispatch(initLoadComments(comments))
-});
-
-export default connect(null, mapDispatchToProps)(Comment);
+export default Comment;

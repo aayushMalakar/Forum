@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       Forum
-      <Card></Card>
-      <Comments></Comments>
+      <Card />
+      <Comments />
     </div>
   );
 }

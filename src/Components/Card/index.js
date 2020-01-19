@@ -3,6 +3,7 @@ import { Card } from "semantic-ui-react";
 
 import Header from "./Header";
 import Body from "./Body";
+import PostInteraction from "./postInteraction";
 
 const Cards = props => {
   return (
@@ -15,6 +16,7 @@ const Cards = props => {
         meta="Nitesh shrestha"
         description="Sunjay also known as crashpian is a loser that is always late."
       />
+      <PostInteraction></PostInteraction>
     </>
   );
 };

@@ -7,9 +7,9 @@ import CommentIneraction from "./CommentIneraction";
 const Comments = props => {
   return (
     <div>
+      <CommentBox></CommentBox>
       <Comment></Comment>
       <CommentIneraction></CommentIneraction>
-      <CommentBox></CommentBox>
     </div>
   );
 };

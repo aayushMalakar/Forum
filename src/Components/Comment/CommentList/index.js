@@ -3,23 +3,19 @@ import { Comment } from "semantic-ui-react";
 
 const CommentLoader = ({ comment }) => {
   const [name, setName] = useState("");
-  const [date, setDate] = useState("");
+  // const [date, setDate] = useState("");
   const [answer, setAnswer] = useState("");
 
   useEffect(() => {
     if (Object.keys(comment).length > 0) {
       setName(comment.name);
-      setDate(comment.date);
+      // setDate(comment.date);
       setAnswer(comment.answer);
     }
-  });
+  }, [comment]);
 
   return (
     <div>
-      {/* <div>Name:{name}</div>
-      <div>Date:{date}</div>
-      <div>Answers:{answer}</div> */}
-
       <Comment.Group>
         <Comment>
           <Comment.Avatar src="https://react.semantic-ui.com/images/avatar/small/matt.jpg" />
@@ -35,6 +31,7 @@ const CommentLoader = ({ comment }) => {
           </Comment.Content>
         </Comment>
       </Comment.Group>
+      <hr />
     </div>
   );
 };

@@ -1,22 +1,18 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 
-import Header from "./Header";
-import Body from "./Body";
-import PostInteraction from "./postInteraction";
+import "./cardStyle.css";
 
 const Cards = props => {
   return (
     <>
-      {/* <Header></Header>
-      <Body></Body> */}
       <Card
+        fluid
         href="#card-example-link-card"
-        header="Sunjay is always late"
+        header="Best framework or library to built frontend"
         meta="Nitesh shrestha"
-        description="Sunjay also known as crashpian is a loser that is always late."
+        description="I am new to Js and i know little about the framework and library to built front end application. I need help to find a good framework to learn for begineers."
       />
-      <PostInteraction></PostInteraction>
     </>
   );
 };

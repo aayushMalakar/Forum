@@ -84,16 +84,9 @@ class LandingPage extends Component {
             }
           ]
         }
-      ],
-      viewComments: false
+      ]
     };
   }
-
-  viewComments = () => {
-    this.setState({
-      viewComments: !this.state.viewComments
-    });
-  };
 
   render() {
     return (
@@ -115,12 +108,10 @@ class LandingPage extends Component {
             ) : (
               this.state.comments.map(comment =>
                 comment.commentId === post.commentId ? (
-                  <Comment.Group collapsed={this.state.viewComments}>
-                    <CommentList
-                      key={comment.commentId}
-                      comment={comment.value}
-                    />
-                  </Comment.Group>
+                  <CommentList
+                    key={comment.commentId}
+                    comment={comment.value}
+                  />
                 ) : (
                   <></>
                 )

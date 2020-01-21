@@ -5,6 +5,7 @@ import QuestionBar from "../../Components/QuestionBar";
 import Card from "../../Components/Card";
 import CommentBox from "../../Components/Comment/CommentBox";
 import CommentList from "../../Components/Comment/CommentList";
+import Navbar from "../../Components/Navbar";
 
 class LandingPage extends Component {
   constructor(props) {
@@ -97,6 +98,7 @@ class LandingPage extends Component {
   render() {
     return (
       <>
+        <Navbar />
         <button onClick={this.viewComments}>view comments</button>
         <QuestionBar></QuestionBar>
         <Divider hidden />

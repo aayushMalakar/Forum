@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Divider, Comment } from "semantic-ui-react";
 
+import "./landingPageStyle.css";
+
 import QuestionBar from "../../Components/QuestionBar";
 import Card from "../../Components/Card";
 import CommentBox from "../../Components/Comment/CommentBox";
@@ -92,11 +94,9 @@ class LandingPage extends Component {
     return (
       <>
         <Navbar />
-        <button onClick={this.viewComments}>view comments</button>
         <QuestionBar></QuestionBar>
-        <Divider hidden />
         {this.state.posts.map(post => (
-          <div>
+          <div className="landing-page__post">
             <Card
               key={post.id}
               post={post}
@@ -117,7 +117,6 @@ class LandingPage extends Component {
                 )
               )
             )}
-            <Divider section />
           </div>
         ))}
       </>

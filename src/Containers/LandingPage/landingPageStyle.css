@@ -1,0 +1,8 @@
+.landing-page__post {
+  border-radius: 10px;
+  margin: 15px auto 15px auto;
+  width: 620px;
+  border: 1px solid #cbd5e0;
+  background-color: #ffffff;
+  padding: 10px;
+}

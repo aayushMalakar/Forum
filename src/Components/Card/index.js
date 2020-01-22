@@ -6,7 +6,7 @@ import CommentBox from "../Comment/CommentBox";
 import "./cardStyle.css";
 
 const Cards = props => {
-  const [Commentclicked, setCommentclicked] = useState(false);
+  const [Commentclicked, setCommentclicked] = useState(true);
 
   const toggleCommentBox = () => {
     setCommentclicked(!Commentclicked);
@@ -14,7 +14,7 @@ const Cards = props => {
 
   return (
     <>
-      <div className="card__container">
+      <div className="card-container">
         <Item.Group>
           <Item>
             <Item.Content>
@@ -24,14 +24,23 @@ const Cards = props => {
             </Item.Content>
           </Item>
         </Item.Group>
+        <hr />
         <div>
-          <i className="fas fa-arrow-up"></i>
-          <span>{props.post.upVotes}</span>
-          <span onClick={toggleCommentBox}>
+          <span className="icon">
+            <i className="fas fa-arrow-up"></i>
+            <span>{props.post.upVotes}</span>
+          </span>
+
+          <span className="icon" onClick={toggleCommentBox}>
             <i className="far fa-comment"></i>
             <span>{props.post.comments}</span>
           </span>
-          <i className="fas fa-share-alt"></i>
+          <span className="icon">
+            <i className="fas fa-share-alt"></i>
+          </span>
+          <span className="card-container__view-comments">
+            view comments...
+          </span>
         </div>
       </div>
       <CommentBox clicked={Commentclicked} />

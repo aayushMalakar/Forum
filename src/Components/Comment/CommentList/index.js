@@ -23,7 +23,10 @@ const CommentLoader = props => {
     <div className="comment__list">
       <Comment.Group>
         <Comment>
-          <Comment.Avatar src="https://react.semantic-ui.com/images/avatar/small/matt.jpg" />
+          <Comment.Avatar
+            circular
+            src="https://react.semantic-ui.com/images/avatar/small/matt.jpg"
+          />
           <Comment.Content>
             <Comment.Author as="a">{comment.name}</Comment.Author>
             <Comment.Metadata>
@@ -36,7 +39,6 @@ const CommentLoader = props => {
           </Comment.Content>
         </Comment>
       </Comment.Group>
-      <hr />
     </div>
   ));
 };

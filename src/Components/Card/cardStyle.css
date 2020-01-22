@@ -1,16 +1,27 @@
+.card-container {
+  background-color: white;
+  padding: 10px;
+}
+
 i {
   margin-right: 6px;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-span {
-  margin-right: 34px;
+.icon {
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 4px;
+  font-size: 13px;
 }
 
-.card__container {
-  margin: 20px auto 0px auto;
-  border: 1px solid black;
-  width: 600px;
-  padding: 25px;
+.icon:hover {
+  background-color: rgb(247, 242, 242);
+}
+
+.card-container__view-comments {
+  font-size: 13px;
+  cursor: pointer;
+  float: right;
 }

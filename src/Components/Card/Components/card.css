@@ -1,0 +1,62 @@
+.card-container {
+  padding: 10px;
+  border: 0.5px solid rgba(179, 179, 179, 0.5);
+  border-radius: 4px;
+  width: 80%;
+  margin: 5px auto;
+}
+.font-awesome-icon {
+  margin: 0px 10px;
+}
+
+.card-container__view-comments {
+  font-size: 13px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+}
+
+.card-container__options {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  right: 0;
+  top: 30px;
+  box-shadow: 0 0 2px;
+  background-color: white;
+  z-index: 2;
+  display: block;
+  border-radius: 5px;
+}
+
+.card-container__view-comments:hover > #options-icon {
+  background-color: rgb(247, 242, 242);
+  color: #0066c0;
+}
+
+.card-container__options li {
+  padding: 8px 45px 8px 8px;
+  text-transform: uppercase;
+}
+
+.card-container__options #delete-icon {
+  padding: 0px 10px;
+  display: inline;
+}
+
+.card-container__options li:hover {
+  color: #0066c0;
+  background-color: rgb(247, 242, 242);
+}
+
+hr {
+  opacity: 0.4;
+}
+
+.q_name {
+  color: rgba(107, 107, 107, 0.5);
+}
+
+.popups:hover {
+  cursor: pointer;
+}

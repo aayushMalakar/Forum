@@ -2,36 +2,147 @@
   width: 100%;
   background: #0e6ab6;
 }
+
 nav {
   width: 80%;
   margin: 0px auto;
-  line-height: 50px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: sans-serif;
 }
+
 .logo h2 {
   color: #fff;
 }
+
 .navbar-links {
   color: #fff;
   display: flex;
   align-items: center;
 }
-#search-box {
-  background: transparent;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  color: white;
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  min-height: 1vh;
 }
-input::placeholder {
-  color: red;
+
+li {
+  list-style-type: none;
 }
-#search-icon {
-  color: #fff;
-}
-#profile-btn {
+
+#signup-btn {
   background-color: #fff;
   margin-left: 10px;
+}
+
+#link {
+  color: rgb(105, 104, 104);
+}
+
+#profile-btn {
+  display: none;
+  margin-left: 10px;
+  color: white;
+}
+
+#searchBar {
+  border-radius: 50px;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-items {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    min-height: 1vh;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 6px 0px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 24px;
+    height: 2px;
+    margin: 4px;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+
+  .nav-links {
+    width: 110%;
+    display: flex;
+    position: absolute;
+    right: -106%;
+    top: 11vh;
+    background-color: rgb(17, 116, 173);
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    transition: right 0.5s ease;
+    z-index: 2;
+  }
+
+  #searchBar {
+    display: block;
+  }
+
+  #signup-btn {
+    margin-left: 0px;
+  }
+
+  .nav-active {
+    right: 0%;
+  }
+}
+
+@keyframes barDekha {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+.change .line3 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
 }

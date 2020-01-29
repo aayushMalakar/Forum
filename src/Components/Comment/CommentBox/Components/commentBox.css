@@ -1,0 +1,17 @@
+.form {
+  margin: 15px auto 0px auto;
+  border-radius: 4px;
+  width: 100vw;
+}
+.form-group {
+  display: flex;
+}
+.form-input {
+  border-radius: 50px;
+  width: 500vw;
+}
+@media screen and (max-width: 768px) {
+  #addComment {
+    margin: 10px auto;
+  }
+}

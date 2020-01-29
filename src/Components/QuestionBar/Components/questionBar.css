@@ -1,0 +1,23 @@
+#question-bar {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  width: 80%;
+  margin: 10px auto;
+}
+#question-bar__input {
+  border: none;
+}
+.question-input {
+  display: flex;
+  align-items: center;
+}
+#question-bar__tags {
+  margin-bottom: 8px;
+}
+.question-bar__footer-block {
+  display: block;
+}
+.question-bar__footer-hidden {
+  display: none;
+}

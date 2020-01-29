@@ -1,0 +1,12 @@
+.search-container {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+#search-result {
+  padding: 10px;
+  border-radius: 4px;
+  width: 80%;
+  margin: 10px auto 25px auto;
+}
